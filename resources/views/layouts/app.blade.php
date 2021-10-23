@@ -11,13 +11,20 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    {{-- <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script> --}}
+    @yield('scripts')
+
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+    {{-- <link href="/css/fontawesome.min.css" rel='stylesheet' type='text/css'>
+    <link href="/css/bootstrap.min.css" rel="stylesheet"> --}}
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
 <body>
     <div id="app">
@@ -78,6 +85,12 @@
         <main class="py-4">
             @yield('content')
         </main>
+        <footer class="fixed-bottom">
+            <center>
+            Copyright &copy; Larapus Made With Love Developed by
+            <a href="#">Kidam Kusnandi</a> - {{ date('Y') }}
+            </center>
+        </footer>
     </div>
 </body>
 </html>

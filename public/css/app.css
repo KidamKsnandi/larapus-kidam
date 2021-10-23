@@ -43,6 +43,11 @@
   box-sizing: border-box;
 }
 
+.tab-pane {
+padding: 15px 0px 15px 0px;
+}
+
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
