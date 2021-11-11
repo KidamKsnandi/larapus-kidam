@@ -16,12 +16,12 @@ class UsersSeeder extends Seeder
     public function run()
     {
         $adminRole = new Role;
-        $adminRole->name = "Admin";
+        $adminRole->name = "admin";
         $adminRole->display_name = "Admin Larapus";
         $adminRole->save();
 
         $memberRole = new Role;
-        $memberRole->name = "Member";
+        $memberRole->name = "member";
         $memberRole->display_name = "Member Larapus";
         $memberRole->save();
 
